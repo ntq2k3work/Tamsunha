@@ -1,0 +1,41 @@
+# Flutter / Dart generated state
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+coverage/
+app/build/
+app/.dart_tool/
+app/.flutter-plugins-dependencies
+app/android/.gradle/
+app/android/local.properties
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+
+# Local credentials and environment configuration
+.env
+.env.*
+!.env.example
+server/.agents/
+server/.amp/
+server/.claude/
+server/.factory/
+server/.pi/
+server/.mcp.json
+server/opencode.json
+server/database/*.sqlite
+server/database/*.sqlite-*
+app/config/supabase.local.json
+supabase/.env
+supabase/.branches/
+supabase/.temp/
+
+# Platform signing material
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+*.provisionprofile
