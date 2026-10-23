@@ -1,6 +1,6 @@
 # TƯỜNG NHỎ — ALL-IN-ONE CODEX SPEC v2.0
 
-> **Architecture update (ADR-002, 2026-10-23):** the owner has replaced Supabase/PostgreSQL with a Laravel API in `server/` and local MySQL. This decision supersedes DEC-12 and all Supabase-specific implementation details below. Product behavior, privacy, authorization, idempotency, transaction, and safety invariants remain normative; see [ADR-002](docs/ADR/ADR-002-laravel-mysql-api.md).
+> **Architecture update (ADR-002, 2026-10-23):** the owner replaced Supabase/PostgreSQL with the Laravel API in `server/` and local MySQL. This decision supersedes DEC-12 and every Supabase-specific setup, package, migration, function, deployment, and test instruction below; those instructions are historical and must not be executed. Product behavior, privacy, authorization, idempotency, transaction, and safety invariants remain normative; see [ADR-002](docs/ADR/ADR-002-laravel-mysql-api.md).
 
 For best agent behavior, use the individual files in the zip at repository root (`AGENTS.md` auto-discovered). This consolidated file is an offline reference; detailed document precedence: MASTER > AGENTS > other documents.
 

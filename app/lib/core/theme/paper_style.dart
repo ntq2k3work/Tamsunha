@@ -21,7 +21,7 @@ class PaperDeterministicStyle {
     required this.attachmentAngleDeg,
   });
 
-  /// Sinh kiểu hiển thị tất định từ một giá trị seed nguyên (Postgres integer).
+  /// Sinh kiểu hiển thị tất định từ một giá trị seed nguyên.
   factory PaperDeterministicStyle.fromSeed(int seed) {
     final h1 = _mix(seed, 1);
     final h2 = _mix(seed, 2);

@@ -4,7 +4,7 @@
 
 ## Required run before G1/G4 can pass
 
-On a clean machine with Flutter stable 3.47+ and a DEV Supabase configuration:
+On a clean machine with Flutter stable 3.47+ and the local Laravel API/MySQL environment configured:
 
 1. Generate Android/iOS runners, resolve dependencies, then pass `dart format`, `flutter analyze`, `flutter test`, and an Android debug build.
 2. On a lower-tier and a current Android device, capture a 10-minute profile run with 10k notes and record device model, OS, build mode, viewport/zoom, Flutter/Flame version, p50/p95 frame time, jank count, and memory at 0/5/10 minutes.

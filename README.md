@@ -4,7 +4,7 @@ Tường Nhỏ is a Flutter app for an adult-only anonymous journaling community
 
 ## Implementation status
 
-The active architecture is a Laravel API with local MySQL and private Laravel Reverb channels. The Flutter client talks only to that API. The earlier Supabase/PostgreSQL implementation is no longer used by the app; [ADR-002](docs/ADR/ADR-002-laravel-mysql-api.md) records the migration decision. Local API and MySQL setup is in [server/README.md](server/README.md).
+The active architecture is a Laravel API with local MySQL and private Laravel Reverb channels. The Flutter client talks only to that API. Local API and MySQL setup is in [server/README.md](server/README.md); the current backend decision is recorded in [ADR-002](docs/ADR/ADR-002-laravel-mysql-api.md).
 
 The project still needs Flutter compilation/device acceptance, configured Firebase credentials and device push acceptance, an approved account-deletion purge/export policy, operational checks, and legal/store review before release. See [docs/PROGRESS.md](docs/PROGRESS.md), [docs/PUSH_DELIVERY.md](docs/PUSH_DELIVERY.md), and [docs/OPEN_QUESTIONS.md](docs/OPEN_QUESTIONS.md).
 

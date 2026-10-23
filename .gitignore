@@ -28,11 +28,6 @@ server/.mcp.json
 server/opencode.json
 server/database/*.sqlite
 server/database/*.sqlite-*
-app/config/supabase.local.json
-supabase/.env
-supabase/.branches/
-supabase/.temp/
-
 # Platform signing material
 *.jks
 *.keystore

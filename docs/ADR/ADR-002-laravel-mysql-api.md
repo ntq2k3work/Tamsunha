@@ -12,11 +12,10 @@ Existing product invariants remain in force: the API derives the acting user fro
 
 ## Consequences
 
-- Supabase is no longer part of the active Flutter/backend runtime. The app uses Laravel API repositories, Sanctum bearer tokens, MySQL migrations, Reverb authorization, and a scheduled Laravel push command.
-- The current five PostgreSQL migrations and 47 public SQL functions are behavior references only; they are not executable against MySQL. Port behavior and authorization into `server/` and keep the Flutter domain/repository contracts stable where possible.
-- Retain the old `supabase/` SQL and test harness only as a temporary behavior reference until MySQL-backed authorization/concurrency checks have been run. It is not used by the app or server.
+- The app uses Laravel API repositories, Sanctum bearer tokens, MySQL migrations, Reverb authorization, and a scheduled Laravel push command. Supabase runtime, migrations, functions, and test artifacts have been removed from the repository.
+- This ADR and the architecture update at the top of `ALL_IN_ONE_SPEC.md` preserve the migration history. Do not recreate or run the superseded Supabase implementation.
 - A local MySQL server is reachable only from the local host/network. Public use later requires deploying the API and database with HTTPS, backups, mail delivery, secrets, and operations ownership.
-- No existing Supabase user data migration is planned; the current project has no configured Supabase instance or project credentials.
+- No existing cloud database user data migration is planned; the local project has no configured production database or project credentials.
 
 ## Development verification
 
